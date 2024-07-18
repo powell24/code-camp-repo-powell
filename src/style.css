@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+h1 {
+    color: #ffffff; /* Light color for the header */
+    margin-top: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(50, 20px);
+    grid-gap: 1px;
+    margin: 20px auto;
+    background-color: #1e1e1e; /* Slightly lighter background for grid */
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #333; /* Dark cell background */
+    border: 1px solid #444; /* Slightly lighter border */
+    cursor: pointer;
+}
+
+.cell.alive {
+    background-color: #e0e0e0; /* Light color for alive cells */
+}
+
+#controls {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333; /* Dark button background */
+    color: #e0e0e0; /* Light button text color */
+    border: 1px solid #444; /* Border to match the dark theme */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444; /* Slightly lighter on hover */
+    border-color: #555; /* Slightly lighter border on hover */
+}
